@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.main{
+  background: rgb(75,71,163);
+  width: 100%;
+  background: linear-gradient(15deg, rgba(75,71,163,1) 0%, rgba(10,58,92,1) 36%, rgba(16,112,122,1) 51%, rgba(183,66,195,0.9473039215686274) 99%);
+  height: 100vh;
+}
+.game{
+  max-width: calc(3 * 120px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.turn{
+  font-size: 25px;
+  font-style: italic;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: aliceblue;
+  justify-content: flex-start;
+  text-shadow: 8px 8px 8px 8px rgb(40, 39, 39);
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.btn{
+  width: 120px;
+  height: 120px;
+  font-size: 36px;
+  border: 2px solid rgb(147, 99, 176);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 60px;
+  color: rgb(234, 234, 117);
+}
+.btn:hover {
+  background-color: rgba(218, 155, 230, 0.895);
+}
+.reset{
+  padding: 5px 10px;
+  margin-top: 30px;
+  border-radius: 15px;
+  border-color: rgb(108, 50, 190);
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(84, 50, 115);
+}
